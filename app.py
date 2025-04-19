@@ -10,11 +10,11 @@ from datetime import datetime
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', 'ed5ed4b7275ba48cffaeb870379c7e41')
+app.secret_key = os.environ.get('SECRET_KEY', '')
 
 # MySQL Configuration
 db_config = {
-    'host': os.environ.get('DB_HOST', "database-1.c1y0u66muu2g.us-east-2.rds.amazonaws.com"),
+    'host': os.environ.get('DB_HOST', ""),
     'user': os.environ.get('DB_USER', 'admin'),
     'password': os.environ.get('DB_PASSWORD', 'Manoj2025'),
     'db': os.environ.get('DB_NAME', 'flask_todo'),
