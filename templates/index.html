@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="welcome">
+    <h2>Welcome to the Flask Todo App</h2>
+    <p>This simple todo application helps you keep track of your tasks.</p>
+    <div class="actions">
+        <a href="{{ url_for('login') }}" class="btn">Login</a>
+        <a href="{{ url_for('register') }}" class="btn">Register</a>
+    </div>
+</div>
+{% endblock %}
